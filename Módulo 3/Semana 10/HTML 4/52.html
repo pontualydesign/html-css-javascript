@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Box</title>
+        <style type="text/css">
+            body{
+                background-image: url('images/wallpaper.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            .loginBox{
+                width: 320px;
+                margin: 50px auto;
+                padding: 20px;
+                border-radius: 5px;
+                background-color: #fff;
+                box-shadow: 0 10px 25px rgba(0,0,0,.3);
+            }
+            .loginBox h2{
+                margin: 0;
+                padding: 0;
+            }
+            label, input{
+                display: block;
+                margin: 12px 0;
+            }
+            input[type="text"], input[type="password"]{
+                width: 96%;
+            }
+            button{
+                border: none;
+                background-color: #008CBA;
+                width: 100%;
+                color: #fff;
+                font-weight: bold;
+                padding: 5px;
+                margin: 10px 0;
+            }
+            button:hover{
+                background-color: #05456c;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="loginBox">
+            <h2>Login</h2>
+            <form>
+                <label for="usr">Username</label>
+                <input type="text" id="usr" name="username">
+                <label for="passwd">Password</label>
+                <input type="password" id="passwd" name="password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </body>
+</html>

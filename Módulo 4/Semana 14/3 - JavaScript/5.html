@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function converteReal(){
+                var reais = window.prompt("Quantos reais você tem?");
+                console.log(reais);
+                var reais = parseInt(reais);
+                var dolares = (reais)/5.44;
+                alert("Você tem US$: " + parseFloat(dolares.toFixed(2)));
+            }
+            converteReal();
+        </script>
+    </head>
+</html>

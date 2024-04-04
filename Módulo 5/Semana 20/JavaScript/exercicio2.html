@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hide</title>
+    </head>
+    <body>
+        <h1>Some Aparece</h1>
+        <p id="exemplo" style="display: block">Clique no botão para desaparecer ou aparecer com esse escrito...</p>
+        <button type="button" onclick="someAparece()">Clique aqui</button>
+
+        <script>
+            var x = document.getElementById('exemplo');
+            function someAparece(){
+                if (x.style.display === "block"){
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

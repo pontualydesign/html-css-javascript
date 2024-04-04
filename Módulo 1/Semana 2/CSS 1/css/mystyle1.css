@@ -1,0 +1,17 @@
+body{
+	background-color: lightblue;
+}
+h1{
+	color: #fff;
+	text-align: center;	
+}
+h2{
+	margin-left: 200px;
+	color: navy;
+	font-style: italic;
+}
+p{
+	font-size: 26px;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

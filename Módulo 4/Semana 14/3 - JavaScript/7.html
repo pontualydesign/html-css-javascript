@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function cobraImposto(){
+                var preco = window.prompt("Qual o valor do produtor? R$");
+                console.log(preco);
+                var preco = parseInt(preco);
+                var imposto = (preco * 60)/100;
+                var x = parseFloat(imposto.toFixed(2));
+                window.alert("O imposto do produto será de R$"+x);
+            }
+            cobraImposto();
+        </script>
+    </head>
+</html>

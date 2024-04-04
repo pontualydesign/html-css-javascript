@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function aptoDirigir(){
+                var ano_nasc = window.prompt("Em que ano você nasceu?");
+                console.log(ano_nasc);
+                var ano_nasc = parseInt(ano_nasc);
+                var ano_atual = window.prompt("Em que ano estamos?");
+                console.log(ano_atual);
+                var ano_atual = parseInt(ano_atual);
+                var x = (ano_atual - ano_nasc);
+                window.alert(x);
+                if (x >= 18){
+                    window.alert("Você tem " + x + " anos e está apto a dirigir");
+                } else {
+                    window.alert("Menor de 18!");
+                }
+            }
+            aptoDirigir();
+        </script>
+    </head>
+</html>

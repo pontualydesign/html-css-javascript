@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mudar Escrito</title>
+    </head>
+    <body>
+        <h1>Mudar Escrito</h1>
+        <p id="exemplo">John Doe</p>
+        <button type="button" onclick="mudarEscrito()">Clique aqui</button>
+
+        <script>
+            var x = document.getElementById('exemplo');
+            function mudarEscrito(){
+                if (x.innerText === "John Doe"){
+                    x.innerText = "Felipe Lima";
+                } else {
+                    x.innerText = "John Doe";
+                }
+            }
+        </script>
+    </body>
+</html>

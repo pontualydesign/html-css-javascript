@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function triangulos(){
+                var L1 = window.prompt("Digite um lado:");
+                console.log(L1);
+                var L1 = parseInt(L1);
+                var L2 = window.prompt("Digite outro lado:");
+                console.log(L2);
+                var L2 = parseInt(L2);
+                var L3 = window.prompt("Digite outro lado:");
+                console.log(L3);
+                var L3 = parseInt(L3);
+                var EQ = (L1 === L2) && (L2 === L3) && (L3 === L1);
+                var ES = (L1 != L2) && (L2 != L3) && (L3 != L1);
+                var IS = (L1 === L2) && (L2 != L3) || (L2 === L3) && (L1 != L3) || (L1 === L3) && (L2 != L1);
+                var TRI = (L1 < L2 + L3) && (L2 < L1 + L3) && (L3 < L1 + L2);
+                window.alert("É um triangulo? " + TRI);
+                window.alert("É EQUILATERO? " + EQ);
+                window.alert("É ESCALENO? " + ES);
+                window.alert("É ISOSCELES? " + IS);
+            }
+            triangulos();
+        </script>
+    </head>
+</html>

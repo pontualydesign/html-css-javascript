@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Soma e subtrai</title>
+    </head>
+    <body>
+        <h1>Soma & Subtrai</h1>
+        <p>7 + 3 = <span id="soma">?</span></p>
+        <p>7 - 3 = <span id="subtrai">?</span></p>
+        <br>
+        <button type="button" onclick="somar()">Somar</button>
+        <button type="button" onclick="subtrair()">Subtrair</button>
+
+        <script>
+            let a = 7
+            let b = 3
+
+            function somar(){
+                document.getElementById('soma').innerHTML = a + b;
+            }
+            function subtrair(){
+                document.getElementById('subtrai').innerHTML = a - b;
+            }
+        </script>
+    </body>
+</html>

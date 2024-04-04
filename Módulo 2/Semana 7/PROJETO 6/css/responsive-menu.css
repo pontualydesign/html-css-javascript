@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans.ttf') format('truetype');
+}
+body{
+    font-family: 'Open Sans';
+}
+#myMenu{
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+}
+.responsive-dropdown{
+    list-style-type: none;
+}
+.responsive-dropdown li{
+    float: left;
+    position: relative;
+}
+.responsive-dropdown li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 16px;
+    transition: background 0.5s;
+}
+.responsive-dropdown li a:hover{
+    background-color: rgb(23,133,233);
+}
+.responsive-dropdown li.lastMenu{
+    float: right;
+    background-color: rgb(23,133,233);
+}
+.responsive-dropdown li ul{
+    list-style-type: none;
+    background-color: #333;
+    position: absolute;
+    display: none;
+}
+.responsive-dropdown li:hover ul{
+    display: block;
+}
+.responsive-dropdown li ul li{
+    width: 150px;
+}
+
+@media (max-width: 600px){
+    .responsive-dropdown li{
+        float: none;
+        background-color: #333;
+        text-align: center;
+    }
+    .responsive-dropdown li.lastMenu{
+        float: none;
+    }
+    .responsive-dropdown li ul{
+        position: static;
+        display: block;
+    }
+    .responsive-dropdown li ul li{
+        width: 100%;
+    }
+}

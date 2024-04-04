@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function emprestimo(){
+                var empr = window.prompt("O Empréstimo será de quantos reais? R$");
+                console.log(empr);
+                var empr = parseInt(empr);
+                var porc = (empr * 20)/100;
+                var total = (empr + porc);
+                var total = parseFloat(total);
+                window.alert("O Total a pagar será de " + total);
+                var vezes = window.prompt("Você quer pagar em quantas vezes?");
+                console.log(vezes);
+                var vezes = parseInt(vezes);
+                var x = (total) / (vezes);
+                var x = parseFloat(x.toFixed(2));
+                window.alert("Você pagará um total de "+ vezes + " vezes de " + x + " reais R$");  
+            }
+            emprestimo();
+        </script>
+    </head>
+</html>

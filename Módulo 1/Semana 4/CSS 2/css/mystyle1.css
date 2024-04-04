@@ -1,0 +1,12 @@
+body{
+	background-color: lightblue;
+}
+h1{
+	color: #fff;
+	text-align: center;
+}
+p{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 25px;
+	font-style: italic;
+}

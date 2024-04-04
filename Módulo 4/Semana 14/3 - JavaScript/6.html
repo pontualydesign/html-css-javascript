@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function fahrenheit(){
+                var F = window.prompt("Qual a temperatura aqui?? FAHRENHEIT");
+                console.log(F);
+                var F = parseInt(F);
+                var C = (F - 32)/1.8;
+                var C = parseFloat(C.toFixed(2));
+                window.alert("No Brasil estaria " + C + " graus ");
+            }
+            fahrenheit();
+        </script>
+    </head>
+</html>

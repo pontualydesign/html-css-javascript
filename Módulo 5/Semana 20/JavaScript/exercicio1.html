@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Negrito</title>
+    </head>
+    <body>
+        <h1>Negrito</h1>
+        <p id="exemplo" style="font-weight: normal">Clique no botão para tornar o texto em negrito e clique novamente para o texto voltar ao normal...</p>
+        <button type="button" onclick="negrito()">Clique aqui</button>
+
+        <script>
+            var x = document.getElementById('exemplo');
+            function negrito(){
+                if (x.style.fontWeight === "normal"){
+                    x.style.fontWeight = "bold";
+                } else {
+                    x.style.fontWeight = "normal";
+                }
+            }
+        </script>
+    </body>
+</html>

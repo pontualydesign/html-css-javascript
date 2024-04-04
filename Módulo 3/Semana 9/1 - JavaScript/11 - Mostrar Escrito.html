@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mostrar Escrito</title>
+    </head>
+    <body>
+        <h1>Mostrar Escrito</h1>
+        <p id="exemplo"></p>
+        <button type="button" onclick="mostrarEscrito()">Clique aqui</button>
+
+        <script>
+            let a = "John"
+            let b = "Doe"
+            let c = a + " " + b
+            function mostrarEscrito(){
+                document.getElementById("exemplo").innerHTML = c;
+            }
+        </script>
+    </body>
+</html>

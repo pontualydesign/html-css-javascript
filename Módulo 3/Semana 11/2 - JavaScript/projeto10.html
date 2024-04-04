@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Score</title>
+    </head>
+    <body>
+        <h1>Grade Score</h1>
+        <form>
+            <label for="gradeScore">Grade Score</label>
+            <input type="number" id="gradeScore" name="score" value="">
+            <button type="button" onclick="myFunction()">Hit</button>
+            <h3 id="result"></h3>
+        </form>
+
+        <script>
+            
+            function myFunction(){
+
+                var x = document.getElementById('gradeScore').value;
+                if (!isNaN(x)){
+                    if (x >= 90){
+                        grade = 'A'
+                    } else if (x >= 80){
+                        grade = 'B'
+                    } else if (x >= 70){
+                        grade = 'C'
+                    } else if (x >= 60){
+                        grade = 'D'
+                    } else if (x >= 50){
+                        grade = 'E'
+                    } else if (x >= 40){
+                        grade = 'F'
+                    } else if (x < 40){
+                        grade = 'F'
+                    }
+
+                    document.getElementById('result').innerHTML = "Your grade score is " + grade;
+                } else {
+                    document.getElementById('result').innerHTML = "Please enter valid value";
+                }
+            }
+        </script>
+    </body>
+</html>

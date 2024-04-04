@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mudar Cor</title>
+    </head>
+    <body>
+        <h1>Mudar Cor</h1>
+        <p id="exemplo" style="color: initial">Clique no botão para mudar a cor e clique novamente para voltar ao normal...</p>
+        <button type="button" onclick="mudarCor()">Clique aqui</button>
+
+        <script>
+            var x = document.getElementById('exemplo');
+            function mudarCor(){
+                if (x.style.color === "initial"){
+                    x.style.color = "red";
+                } else {
+                    x.style.color = "initial";
+                }
+            }
+        </script>
+    </body>
+</html>

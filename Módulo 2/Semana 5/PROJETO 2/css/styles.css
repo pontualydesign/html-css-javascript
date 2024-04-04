@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: verdana, geneva, tahoma, sans-serif;
+}
+header{
+    padding: 40px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+section#about{
+    padding: 30px;
+    width: 100%;
+    background-color: #e1e1e1;
+}
+section#contact{
+    padding: 10px;
+    width: 100%;
+    background-color: #c1c1c1;
+}
+section#form{
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label, input{
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    max-width: 150px;
+    margin-top: 10px;
+}
+footer{
+    padding: 30px;
+    width: 100%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+}

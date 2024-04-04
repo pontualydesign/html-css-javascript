@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input, focus, blur</title>
+    <script src="jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('input').blur(function(){
+          $(this).css('background-color', 'yellow');
+        });
+        $('input').focus(function(){
+          $(this).css('background-color', 'lightblue');
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h1>Focus, blur</h1>
+    <label for="usr">Usuario</label>
+    <br>
+    <input type="text" id="usr">
+    <br>
+    <label for="passwd">Password</label>
+    <br>
+    <input type="password" id="passwd">
+  </body>
+</html>

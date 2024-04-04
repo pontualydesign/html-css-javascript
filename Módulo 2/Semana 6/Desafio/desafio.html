@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa - Navegadores</title>
+        <style type="text/css">
+            h1{
+                text-align: center;
+            }
+            input[type="text"]{
+                width: 80%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pesquisa Navegadores</h1>
+        <form action="action_page.php">
+            <table border="1" align="center" width="80%" CELLPADDING="10">
+                <tr>
+                    <td>
+                        <label for="fname">Primeiro Nome</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fname" name="fname" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname">Último Nome</label>
+                    </td>
+                    <td>
+                        <input type="text" id="lname" name="lname" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">E-mail</label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" name="email" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h1>Você navega bastante na internet?</h1>
+                        <center>
+                            <input type="radio" id="sim" name="navego" value="Sim">
+                            <label for="sim">Navego</label>
+                            <br>
+                            <input type="radio" id="nao" name="navego" value="Não">
+                            <label for="nao">Não Navego</label>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h1>Conte sua experiência com navegadores</h1>
+                        <center>
+                            <textarea cols="30" rows="10" name="experiencia" placeholder="Escreva aqui..."></textarea>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h1>De que estado você é?</h1>
+                        <center>
+                            <select name="estados">
+                                <option value="saopaulo">São Paulo</option>
+                                <option value="rio">Rio de Janeiro</option>
+                                <option value="minas">Minas Gerais</option>
+                                <option value="santacatarina">Santa Catarina</option>
+                                <option value="es">Espirito Santo</option>
+                            </select>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h1>Qual navegador você usa?</h1>
+                        <center>
+                            <input type="checkbox" id="nav1" name="nav1" value="chrome">
+                            <label for="nav1">Chrome</label>
+                            <br>
+                            <input type="checkbox" id="nav2" name="nav2" value="firefox">
+                            <label for="nav2">Firefox</label>
+                            <br>
+                            <input type="checkbox" id="nav3" name="nav3" value="Opera">
+                            <label for="nav3">Opera</label>
+                            <br>
+                            <input type="checkbox" id="nav4" name="nav4" value="Nenhum">
+                            <label for="nav4">Nenhum</label> 
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h1>Você gostou da nossa pesquisa?</h1>
+                        <center>
+                            <input type="radio" id="gostei" name="gostei" value="gostei">
+                            <label for="gostei">SIM</label>
+                            <br>
+                            <input type="radio" id="naoGostei" name="gostei" value="naoGostei">
+                            <label for="naoGostei">NÃO</label>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <center>
+                            <input type="submit" value="Enviar"><input type="reset" value="Resetar">
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

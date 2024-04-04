@@ -1,0 +1,1 @@
+Criar um texto com color initial e quando clicado fica vermelho, quando clicado volta ao initial novamente

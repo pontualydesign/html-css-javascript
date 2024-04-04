@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mouse Hover</title>
+    <script src="jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#p1').hover(function(){
+          alert('You entered p1');
+        },
+        function(){
+          alert('You out p1');
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h1>Hover</h1>
+    <p id="p1">This is paragraph.</p>
+  </body>
+</html>

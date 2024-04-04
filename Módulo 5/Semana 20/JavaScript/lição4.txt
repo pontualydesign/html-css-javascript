@@ -1,0 +1,2 @@
+Criar uma função que calule a area de um elemento
+base vezes altura e retorne a area na tela.
